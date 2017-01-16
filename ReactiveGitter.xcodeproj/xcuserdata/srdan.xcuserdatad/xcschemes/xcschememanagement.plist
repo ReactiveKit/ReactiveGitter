@@ -4,15 +4,65 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Entities.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Networking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>ReactiveGitter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Scenes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Services.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Views.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>EC6568201E2A926600B19CA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC98C78D1E2B763000E3036A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC98C7A91E2B77E700E3036A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC98C7CF1E2B7B0C00E3036A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC98C7F11E2B7DF100E3036A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC98C8071E2B7FFF00E3036A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

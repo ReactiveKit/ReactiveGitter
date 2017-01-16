@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C67C7261C3B2446003D5A05 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67C7251C3B2446003D5A05 /* JSONEncodable.swift */; };
+		1C67C7271C3B27DA003D5A05 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67C7251C3B2446003D5A05 /* JSONEncodable.swift */; };
+		1C67C7281C3B27DC003D5A05 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67C7251C3B2446003D5A05 /* JSONEncodable.swift */; };
+		1C67C7291C3B27DD003D5A05 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67C7251C3B2446003D5A05 /* JSONEncodable.swift */; };
+		3F70EA931C6D0D2B00972CEB /* JSONSerializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70EA921C6D0D2B00972CEB /* JSONSerializing.swift */; };
+		3F70EA941C6D0D3000972CEB /* JSONSerializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70EA921C6D0D2B00972CEB /* JSONSerializing.swift */; };
+		3F70EA951C6D0D3100972CEB /* JSONSerializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70EA921C6D0D2B00972CEB /* JSONSerializing.swift */; };
+		3F70EA961C6D0D3200972CEB /* JSONSerializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70EA921C6D0D2B00972CEB /* JSONSerializing.swift */; };
+		52E130D11DD536FE008A5396 /* JSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C01DD536D8008A5396 /* JSONDecodableTests.swift */; };
+		52E130D21DD536FF008A5396 /* JSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C01DD536D8008A5396 /* JSONDecodableTests.swift */; };
+		52E130D31DD53700008A5396 /* JSONDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C01DD536D8008A5396 /* JSONDecodableTests.swift */; };
+		52E130D41DD53707008A5396 /* JSONEncodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C11DD536D8008A5396 /* JSONEncodableTests.swift */; };
+		52E130D51DD53707008A5396 /* JSONEncodingDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C21DD536D8008A5396 /* JSONEncodingDetectorTests.swift */; };
+		52E130D61DD53707008A5396 /* JSONParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C31DD536D8008A5396 /* JSONParserTests.swift */; };
+		52E130D71DD53707008A5396 /* JSONSerializingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C41DD536D8008A5396 /* JSONSerializingTests.swift */; };
+		52E130D81DD53707008A5396 /* JSONSubscriptingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C51DD536D8008A5396 /* JSONSubscriptingTests.swift */; };
+		52E130D91DD53707008A5396 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C61DD536D8008A5396 /* JSONTests.swift */; };
+		52E130DA1DD53707008A5396 /* JSONTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C71DD536D8008A5396 /* JSONTypeTests.swift */; };
+		52E130DB1DD53708008A5396 /* JSONEncodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C11DD536D8008A5396 /* JSONEncodableTests.swift */; };
+		52E130DC1DD53708008A5396 /* JSONEncodingDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C21DD536D8008A5396 /* JSONEncodingDetectorTests.swift */; };
+		52E130DD1DD53708008A5396 /* JSONParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C31DD536D8008A5396 /* JSONParserTests.swift */; };
+		52E130DE1DD53708008A5396 /* JSONSerializingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C41DD536D8008A5396 /* JSONSerializingTests.swift */; };
+		52E130DF1DD53708008A5396 /* JSONSubscriptingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C51DD536D8008A5396 /* JSONSubscriptingTests.swift */; };
+		52E130E01DD53708008A5396 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C61DD536D8008A5396 /* JSONTests.swift */; };
+		52E130E11DD53708008A5396 /* JSONTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C71DD536D8008A5396 /* JSONTypeTests.swift */; };
+		52E130E21DD53709008A5396 /* JSONEncodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C11DD536D8008A5396 /* JSONEncodableTests.swift */; };
+		52E130E31DD53709008A5396 /* JSONEncodingDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C21DD536D8008A5396 /* JSONEncodingDetectorTests.swift */; };
+		52E130E41DD53709008A5396 /* JSONParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C31DD536D8008A5396 /* JSONParserTests.swift */; };
+		52E130E51DD53709008A5396 /* JSONSerializingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C41DD536D8008A5396 /* JSONSerializingTests.swift */; };
+		52E130E61DD53709008A5396 /* JSONSubscriptingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C51DD536D8008A5396 /* JSONSubscriptingTests.swift */; };
+		52E130E71DD53709008A5396 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C61DD536D8008A5396 /* JSONTests.swift */; };
+		52E130E81DD53709008A5396 /* JSONTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130C71DD536D8008A5396 /* JSONTypeTests.swift */; };
+		52E130EA1DD53790008A5396 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130B91DD536C3008A5396 /* Person.swift */; };
+		52E130EB1DD53790008A5396 /* sample.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 52E130BA1DD536C3008A5396 /* sample.JSON */; };
+		52E130EC1DD53790008A5396 /* sampleNoWhiteSpace.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 52E130BB1DD536C3008A5396 /* sampleNoWhiteSpace.JSON */; };
+		52E130ED1DD53791008A5396 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130B91DD536C3008A5396 /* Person.swift */; };
+		52E130EE1DD53791008A5396 /* sample.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 52E130BA1DD536C3008A5396 /* sample.JSON */; };
+		52E130EF1DD53791008A5396 /* sampleNoWhiteSpace.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 52E130BB1DD536C3008A5396 /* sampleNoWhiteSpace.JSON */; };
+		52E130F01DD53792008A5396 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E130B91DD536C3008A5396 /* Person.swift */; };
+		52E130F11DD53792008A5396 /* sample.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 52E130BA1DD536C3008A5396 /* sample.JSON */; };
+		52E130F21DD53792008A5396 /* sampleNoWhiteSpace.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 52E130BB1DD536C3008A5396 /* sampleNoWhiteSpace.JSON */; };
+		DB6ADF231C23610B00D77BF1 /* Freddy.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6ADF221C23610B00D77BF1 /* Freddy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB6ADF2A1C23610B00D77BF1 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6ADF1F1C23610B00D77BF1 /* Freddy.framework */; };
+		DB6ADF481C23612000D77BF1 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6ADF3E1C23612000D77BF1 /* Freddy.framework */; };
+		DB6ADF641C23612A00D77BF1 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6ADF5A1C23612900D77BF1 /* Freddy.framework */; };
+		DB6ADF841C23625800D77BF1 /* Freddy.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6ADF221C23610B00D77BF1 /* Freddy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB6ADF851C23625800D77BF1 /* Freddy.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6ADF221C23610B00D77BF1 /* Freddy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB6ADF881C23627500D77BF1 /* Freddy.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6ADF221C23610B00D77BF1 /* Freddy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB6ADF901C2362E000D77BF1 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF891C2362E000D77BF1 /* JSON.swift */; };
+		DB6ADF911C2362E000D77BF1 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF891C2362E000D77BF1 /* JSON.swift */; };
+		DB6ADF921C2362E000D77BF1 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF891C2362E000D77BF1 /* JSON.swift */; };
+		DB6ADF931C2362E000D77BF1 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF891C2362E000D77BF1 /* JSON.swift */; };
+		DB6ADF941C2362E000D77BF1 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8A1C2362E000D77BF1 /* JSONDecodable.swift */; };
+		DB6ADF951C2362E000D77BF1 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8A1C2362E000D77BF1 /* JSONDecodable.swift */; };
+		DB6ADF961C2362E000D77BF1 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8A1C2362E000D77BF1 /* JSONDecodable.swift */; };
+		DB6ADF971C2362E000D77BF1 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8A1C2362E000D77BF1 /* JSONDecodable.swift */; };
+		DB6ADF981C2362E000D77BF1 /* JSONLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8B1C2362E000D77BF1 /* JSONLiteralConvertible.swift */; };
+		DB6ADF991C2362E000D77BF1 /* JSONLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8B1C2362E000D77BF1 /* JSONLiteralConvertible.swift */; };
+		DB6ADF9A1C2362E000D77BF1 /* JSONLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8B1C2362E000D77BF1 /* JSONLiteralConvertible.swift */; };
+		DB6ADF9B1C2362E000D77BF1 /* JSONLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8B1C2362E000D77BF1 /* JSONLiteralConvertible.swift */; };
+		DB6ADF9C1C2362E000D77BF1 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8C1C2362E000D77BF1 /* JSONParser.swift */; };
+		DB6ADF9D1C2362E000D77BF1 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8C1C2362E000D77BF1 /* JSONParser.swift */; };
+		DB6ADF9E1C2362E000D77BF1 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8C1C2362E000D77BF1 /* JSONParser.swift */; };
+		DB6ADF9F1C2362E000D77BF1 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8C1C2362E000D77BF1 /* JSONParser.swift */; };
+		DB6ADFA01C2362E000D77BF1 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8D1C2362E000D77BF1 /* JSONParsing.swift */; };
+		DB6ADFA11C2362E000D77BF1 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8D1C2362E000D77BF1 /* JSONParsing.swift */; };
+		DB6ADFA21C2362E000D77BF1 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8D1C2362E000D77BF1 /* JSONParsing.swift */; };
+		DB6ADFA31C2362E000D77BF1 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8D1C2362E000D77BF1 /* JSONParsing.swift */; };
+		DB6ADFA81C2362E000D77BF1 /* JSONSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8F1C2362E000D77BF1 /* JSONSubscripting.swift */; };
+		DB6ADFA91C2362E000D77BF1 /* JSONSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8F1C2362E000D77BF1 /* JSONSubscripting.swift */; };
+		DB6ADFAA1C2362E000D77BF1 /* JSONSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8F1C2362E000D77BF1 /* JSONSubscripting.swift */; };
+		DB6ADFAB1C2362E000D77BF1 /* JSONSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6ADF8F1C2362E000D77BF1 /* JSONSubscripting.swift */; };
+		E43B67DB1C59598700ACE390 /* JSONEncodingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B67DA1C59598700ACE390 /* JSONEncodingDetector.swift */; };
+		E43B67DC1C59598700ACE390 /* JSONEncodingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B67DA1C59598700ACE390 /* JSONEncodingDetector.swift */; };
+		E43B67DD1C59598700ACE390 /* JSONEncodingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B67DA1C59598700ACE390 /* JSONEncodingDetector.swift */; };
+		E43B67DE1C59598700ACE390 /* JSONEncodingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B67DA1C59598700ACE390 /* JSONEncodingDetector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB6ADF2B1C23610B00D77BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6ADF161C23610B00D77BF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6ADF1E1C23610B00D77BF1;
+			remoteInfo = Freddy;
+		};
+		DB6ADF491C23612000D77BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6ADF161C23610B00D77BF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6ADF3D1C23612000D77BF1;
+			remoteInfo = Freddy;
+		};
+		DB6ADF651C23612A00D77BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6ADF161C23610B00D77BF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6ADF591C23612900D77BF1;
+			remoteInfo = TVFreddy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C67C7251C3B2446003D5A05 /* JSONEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodable.swift; sourceTree = "<group>"; };
+		3F70EA921C6D0D2B00972CEB /* JSONSerializing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializing.swift; sourceTree = "<group>"; };
+		52E130B91DD536C3008A5396 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = FreddyTests/Person.swift; sourceTree = "<group>"; };
+		52E130BA1DD536C3008A5396 /* sample.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sample.JSON; path = FreddyTests/sample.JSON; sourceTree = "<group>"; };
+		52E130BB1DD536C3008A5396 /* sampleNoWhiteSpace.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sampleNoWhiteSpace.JSON; path = FreddyTests/sampleNoWhiteSpace.JSON; sourceTree = "<group>"; };
+		52E130BF1DD536D8008A5396 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FreddyTests/Info.plist; sourceTree = "<group>"; };
+		52E130C01DD536D8008A5396 /* JSONDecodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDecodableTests.swift; path = FreddyTests/JSONDecodableTests.swift; sourceTree = "<group>"; };
+		52E130C11DD536D8008A5396 /* JSONEncodableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONEncodableTests.swift; path = FreddyTests/JSONEncodableTests.swift; sourceTree = "<group>"; };
+		52E130C21DD536D8008A5396 /* JSONEncodingDetectorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONEncodingDetectorTests.swift; path = FreddyTests/JSONEncodingDetectorTests.swift; sourceTree = "<group>"; };
+		52E130C31DD536D8008A5396 /* JSONParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParserTests.swift; path = FreddyTests/JSONParserTests.swift; sourceTree = "<group>"; };
+		52E130C41DD536D8008A5396 /* JSONSerializingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONSerializingTests.swift; path = FreddyTests/JSONSerializingTests.swift; sourceTree = "<group>"; };
+		52E130C51DD536D8008A5396 /* JSONSubscriptingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONSubscriptingTests.swift; path = FreddyTests/JSONSubscriptingTests.swift; sourceTree = "<group>"; };
+		52E130C61DD536D8008A5396 /* JSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONTests.swift; path = FreddyTests/JSONTests.swift; sourceTree = "<group>"; };
+		52E130C71DD536D8008A5396 /* JSONTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONTypeTests.swift; path = FreddyTests/JSONTypeTests.swift; sourceTree = "<group>"; };
+		DB6ADF1F1C23610B00D77BF1 /* Freddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Freddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6ADF221C23610B00D77BF1 /* Freddy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Freddy.h; sourceTree = "<group>"; };
+		DB6ADF241C23610B00D77BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6ADF291C23610B00D77BF1 /* MobileFreddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileFreddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6ADF3E1C23612000D77BF1 /* Freddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Freddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6ADF471C23612000D77BF1 /* FreddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6ADF5A1C23612900D77BF1 /* Freddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Freddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6ADF631C23612A00D77BF1 /* TVFreddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVFreddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6ADF761C23613200D77BF1 /* Freddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Freddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6ADF7F1C23617500D77BF1 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		DB6ADF801C23617500D77BF1 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		DB6ADF811C23617500D77BF1 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		DB6ADF821C23617500D77BF1 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		DB6ADF831C23617500D77BF1 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		DB6ADF891C2362E000D77BF1 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		DB6ADF8A1C2362E000D77BF1 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		DB6ADF8B1C2362E000D77BF1 /* JSONLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLiteralConvertible.swift; sourceTree = "<group>"; };
+		DB6ADF8C1C2362E000D77BF1 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		DB6ADF8D1C2362E000D77BF1 /* JSONParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
+		DB6ADF8F1C2362E000D77BF1 /* JSONSubscripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSubscripting.swift; sourceTree = "<group>"; };
+		E43B67DA1C59598700ACE390 /* JSONEncodingDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingDetector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6ADF1B1C23610B00D77BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF261C23610B00D77BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6ADF2A1C23610B00D77BF1 /* Freddy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF3A1C23612000D77BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF441C23612000D77BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6ADF481C23612000D77BF1 /* Freddy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF561C23612900D77BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF601C23612A00D77BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6ADF641C23612A00D77BF1 /* Freddy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF721C23613200D77BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB6ADF151C23610B00D77BF1 = {
+			isa = PBXGroup;
+			children = (
+				DB6ADF7E1C23617500D77BF1 /* Configurations */,
+				DB6ADF211C23610B00D77BF1 /* Freddy */,
+				DB6ADF2D1C23610B00D77BF1 /* FreddyTests */,
+				DB6ADF201C23610B00D77BF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6ADF201C23610B00D77BF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6ADF1F1C23610B00D77BF1 /* Freddy.framework */,
+				DB6ADF291C23610B00D77BF1 /* MobileFreddyTests.xctest */,
+				DB6ADF3E1C23612000D77BF1 /* Freddy.framework */,
+				DB6ADF471C23612000D77BF1 /* FreddyTests.xctest */,
+				DB6ADF5A1C23612900D77BF1 /* Freddy.framework */,
+				DB6ADF631C23612A00D77BF1 /* TVFreddyTests.xctest */,
+				DB6ADF761C23613200D77BF1 /* Freddy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6ADF211C23610B00D77BF1 /* Freddy */ = {
+			isa = PBXGroup;
+			children = (
+				DB6ADF221C23610B00D77BF1 /* Freddy.h */,
+				DB6ADF891C2362E000D77BF1 /* JSON.swift */,
+				DB6ADF8A1C2362E000D77BF1 /* JSONDecodable.swift */,
+				1C67C7251C3B2446003D5A05 /* JSONEncodable.swift */,
+				DB6ADF8B1C2362E000D77BF1 /* JSONLiteralConvertible.swift */,
+				DB6ADF8C1C2362E000D77BF1 /* JSONParser.swift */,
+				DB6ADF8D1C2362E000D77BF1 /* JSONParsing.swift */,
+				3F70EA921C6D0D2B00972CEB /* JSONSerializing.swift */,
+				DB6ADF8F1C2362E000D77BF1 /* JSONSubscripting.swift */,
+				E43B67DA1C59598700ACE390 /* JSONEncodingDetector.swift */,
+				DB6ADF241C23610B00D77BF1 /* Info.plist */,
+			);
+			name = Freddy;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DB6ADF2D1C23610B00D77BF1 /* FreddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				52E130BF1DD536D8008A5396 /* Info.plist */,
+				52E130C01DD536D8008A5396 /* JSONDecodableTests.swift */,
+				52E130C11DD536D8008A5396 /* JSONEncodableTests.swift */,
+				52E130C21DD536D8008A5396 /* JSONEncodingDetectorTests.swift */,
+				52E130C31DD536D8008A5396 /* JSONParserTests.swift */,
+				52E130C41DD536D8008A5396 /* JSONSerializingTests.swift */,
+				52E130C51DD536D8008A5396 /* JSONSubscriptingTests.swift */,
+				52E130C61DD536D8008A5396 /* JSONTests.swift */,
+				52E130C71DD536D8008A5396 /* JSONTypeTests.swift */,
+				DB6ADFC01C23630500D77BF1 /* Fixtures */,
+			);
+			name = FreddyTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DB6ADF7E1C23617500D77BF1 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				DB6ADF7F1C23617500D77BF1 /* Base.xcconfig */,
+				DB6ADF801C23617500D77BF1 /* Debug.xcconfig */,
+				DB6ADF811C23617500D77BF1 /* Framework.xcconfig */,
+				DB6ADF821C23617500D77BF1 /* Release.xcconfig */,
+				DB6ADF831C23617500D77BF1 /* Tests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		DB6ADFC01C23630500D77BF1 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				52E130B91DD536C3008A5396 /* Person.swift */,
+				52E130BA1DD536C3008A5396 /* sample.JSON */,
+				52E130BB1DD536C3008A5396 /* sampleNoWhiteSpace.JSON */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DB6ADF1C1C23610B00D77BF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6ADF231C23610B00D77BF1 /* Freddy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF3B1C23612000D77BF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6ADF881C23627500D77BF1 /* Freddy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF571C23612900D77BF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6ADF841C23625800D77BF1 /* Freddy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF731C23613200D77BF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6ADF851C23625800D77BF1 /* Freddy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DB6ADF1E1C23610B00D77BF1 /* MobileFreddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6ADF331C23610B00D77BF1 /* Build configuration list for PBXNativeTarget "MobileFreddy" */;
+			buildPhases = (
+				DB6ADF1A1C23610B00D77BF1 /* Sources */,
+				DB6ADF1B1C23610B00D77BF1 /* Frameworks */,
+				DB6ADF1C1C23610B00D77BF1 /* Headers */,
+				DB6ADF1D1C23610B00D77BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileFreddy;
+			productName = Freddy;
+			productReference = DB6ADF1F1C23610B00D77BF1 /* Freddy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB6ADF281C23610B00D77BF1 /* MobileFreddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6ADF361C23610B00D77BF1 /* Build configuration list for PBXNativeTarget "MobileFreddyTests" */;
+			buildPhases = (
+				DB6ADF251C23610B00D77BF1 /* Sources */,
+				DB6ADF261C23610B00D77BF1 /* Frameworks */,
+				DB6ADF271C23610B00D77BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6ADF2C1C23610B00D77BF1 /* PBXTargetDependency */,
+			);
+			name = MobileFreddyTests;
+			productName = FreddyTests;
+			productReference = DB6ADF291C23610B00D77BF1 /* MobileFreddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB6ADF3D1C23612000D77BF1 /* Freddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6ADF4F1C23612000D77BF1 /* Build configuration list for PBXNativeTarget "Freddy" */;
+			buildPhases = (
+				DB6ADF391C23612000D77BF1 /* Sources */,
+				DB6ADF3A1C23612000D77BF1 /* Frameworks */,
+				DB6ADF3B1C23612000D77BF1 /* Headers */,
+				DB6ADF3C1C23612000D77BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Freddy;
+			productName = Freddy;
+			productReference = DB6ADF3E1C23612000D77BF1 /* Freddy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB6ADF461C23612000D77BF1 /* FreddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6ADF521C23612000D77BF1 /* Build configuration list for PBXNativeTarget "FreddyTests" */;
+			buildPhases = (
+				DB6ADF431C23612000D77BF1 /* Sources */,
+				DB6ADF441C23612000D77BF1 /* Frameworks */,
+				DB6ADF451C23612000D77BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6ADF4A1C23612000D77BF1 /* PBXTargetDependency */,
+			);
+			name = FreddyTests;
+			productName = FreddyTests;
+			productReference = DB6ADF471C23612000D77BF1 /* FreddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB6ADF591C23612900D77BF1 /* TVFreddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6ADF6B1C23612A00D77BF1 /* Build configuration list for PBXNativeTarget "TVFreddy" */;
+			buildPhases = (
+				DB6ADF551C23612900D77BF1 /* Sources */,
+				DB6ADF561C23612900D77BF1 /* Frameworks */,
+				DB6ADF571C23612900D77BF1 /* Headers */,
+				DB6ADF581C23612900D77BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVFreddy;
+			productName = TVFreddy;
+			productReference = DB6ADF5A1C23612900D77BF1 /* Freddy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB6ADF621C23612A00D77BF1 /* TVFreddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6ADF6E1C23612A00D77BF1 /* Build configuration list for PBXNativeTarget "TVFreddyTests" */;
+			buildPhases = (
+				DB6ADF5F1C23612A00D77BF1 /* Sources */,
+				DB6ADF601C23612A00D77BF1 /* Frameworks */,
+				DB6ADF611C23612A00D77BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6ADF661C23612A00D77BF1 /* PBXTargetDependency */,
+			);
+			name = TVFreddyTests;
+			productName = TVFreddyTests;
+			productReference = DB6ADF631C23612A00D77BF1 /* TVFreddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB6ADF751C23613200D77BF1 /* NanoFreddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6ADF7B1C23613200D77BF1 /* Build configuration list for PBXNativeTarget "NanoFreddy" */;
+			buildPhases = (
+				DB6ADF711C23613200D77BF1 /* Sources */,
+				DB6ADF721C23613200D77BF1 /* Frameworks */,
+				DB6ADF731C23613200D77BF1 /* Headers */,
+				DB6ADF741C23613200D77BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NanoFreddy;
+			productName = NanoFreddy;
+			productReference = DB6ADF761C23613200D77BF1 /* Freddy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB6ADF161C23610B00D77BF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Big Nerd Ranch";
+				TargetAttributes = {
+					DB6ADF1E1C23610B00D77BF1 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+					};
+					DB6ADF281C23610B00D77BF1 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+					};
+					DB6ADF3D1C23612000D77BF1 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+					};
+					DB6ADF461C23612000D77BF1 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+					};
+					DB6ADF591C23612900D77BF1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DB6ADF621C23612A00D77BF1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DB6ADF751C23613200D77BF1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = DB6ADF191C23610B00D77BF1 /* Build configuration list for PBXProject "Freddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB6ADF151C23610B00D77BF1;
+			productRefGroup = DB6ADF201C23610B00D77BF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6ADF3D1C23612000D77BF1 /* Freddy */,
+				DB6ADF461C23612000D77BF1 /* FreddyTests */,
+				DB6ADF1E1C23610B00D77BF1 /* MobileFreddy */,
+				DB6ADF281C23610B00D77BF1 /* MobileFreddyTests */,
+				DB6ADF591C23612900D77BF1 /* TVFreddy */,
+				DB6ADF621C23612A00D77BF1 /* TVFreddyTests */,
+				DB6ADF751C23613200D77BF1 /* NanoFreddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6ADF1D1C23610B00D77BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF271C23610B00D77BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E130EE1DD53791008A5396 /* sample.JSON in Resources */,
+				52E130EF1DD53791008A5396 /* sampleNoWhiteSpace.JSON in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF3C1C23612000D77BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF451C23612000D77BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E130EB1DD53790008A5396 /* sample.JSON in Resources */,
+				52E130EC1DD53790008A5396 /* sampleNoWhiteSpace.JSON in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF581C23612900D77BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF611C23612A00D77BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E130F11DD53792008A5396 /* sample.JSON in Resources */,
+				52E130F21DD53792008A5396 /* sampleNoWhiteSpace.JSON in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF741C23613200D77BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB6ADF1A1C23610B00D77BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F70EA941C6D0D3000972CEB /* JSONSerializing.swift in Sources */,
+				DB6ADF911C2362E000D77BF1 /* JSON.swift in Sources */,
+				DB6ADFA91C2362E000D77BF1 /* JSONSubscripting.swift in Sources */,
+				DB6ADFA11C2362E000D77BF1 /* JSONParsing.swift in Sources */,
+				DB6ADF991C2362E000D77BF1 /* JSONLiteralConvertible.swift in Sources */,
+				1C67C7271C3B27DA003D5A05 /* JSONEncodable.swift in Sources */,
+				DB6ADF9D1C2362E000D77BF1 /* JSONParser.swift in Sources */,
+				E43B67DC1C59598700ACE390 /* JSONEncodingDetector.swift in Sources */,
+				DB6ADF951C2362E000D77BF1 /* JSONDecodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF251C23610B00D77BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E130D21DD536FF008A5396 /* JSONDecodableTests.swift in Sources */,
+				52E130DC1DD53708008A5396 /* JSONEncodingDetectorTests.swift in Sources */,
+				52E130DE1DD53708008A5396 /* JSONSerializingTests.swift in Sources */,
+				52E130DD1DD53708008A5396 /* JSONParserTests.swift in Sources */,
+				52E130DF1DD53708008A5396 /* JSONSubscriptingTests.swift in Sources */,
+				52E130E11DD53708008A5396 /* JSONTypeTests.swift in Sources */,
+				52E130ED1DD53791008A5396 /* Person.swift in Sources */,
+				52E130DB1DD53708008A5396 /* JSONEncodableTests.swift in Sources */,
+				52E130E01DD53708008A5396 /* JSONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF391C23612000D77BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F70EA931C6D0D2B00972CEB /* JSONSerializing.swift in Sources */,
+				DB6ADF901C2362E000D77BF1 /* JSON.swift in Sources */,
+				DB6ADFA81C2362E000D77BF1 /* JSONSubscripting.swift in Sources */,
+				DB6ADFA01C2362E000D77BF1 /* JSONParsing.swift in Sources */,
+				DB6ADF981C2362E000D77BF1 /* JSONLiteralConvertible.swift in Sources */,
+				1C67C7261C3B2446003D5A05 /* JSONEncodable.swift in Sources */,
+				DB6ADF9C1C2362E000D77BF1 /* JSONParser.swift in Sources */,
+				E43B67DB1C59598700ACE390 /* JSONEncodingDetector.swift in Sources */,
+				DB6ADF941C2362E000D77BF1 /* JSONDecodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF431C23612000D77BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E130D11DD536FE008A5396 /* JSONDecodableTests.swift in Sources */,
+				52E130D51DD53707008A5396 /* JSONEncodingDetectorTests.swift in Sources */,
+				52E130D71DD53707008A5396 /* JSONSerializingTests.swift in Sources */,
+				52E130D61DD53707008A5396 /* JSONParserTests.swift in Sources */,
+				52E130D81DD53707008A5396 /* JSONSubscriptingTests.swift in Sources */,
+				52E130DA1DD53707008A5396 /* JSONTypeTests.swift in Sources */,
+				52E130EA1DD53790008A5396 /* Person.swift in Sources */,
+				52E130D41DD53707008A5396 /* JSONEncodableTests.swift in Sources */,
+				52E130D91DD53707008A5396 /* JSONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF551C23612900D77BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F70EA951C6D0D3100972CEB /* JSONSerializing.swift in Sources */,
+				DB6ADF921C2362E000D77BF1 /* JSON.swift in Sources */,
+				DB6ADFAA1C2362E000D77BF1 /* JSONSubscripting.swift in Sources */,
+				DB6ADFA21C2362E000D77BF1 /* JSONParsing.swift in Sources */,
+				DB6ADF9A1C2362E000D77BF1 /* JSONLiteralConvertible.swift in Sources */,
+				1C67C7281C3B27DC003D5A05 /* JSONEncodable.swift in Sources */,
+				DB6ADF9E1C2362E000D77BF1 /* JSONParser.swift in Sources */,
+				E43B67DD1C59598700ACE390 /* JSONEncodingDetector.swift in Sources */,
+				DB6ADF961C2362E000D77BF1 /* JSONDecodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF5F1C23612A00D77BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E130D31DD53700008A5396 /* JSONDecodableTests.swift in Sources */,
+				52E130E31DD53709008A5396 /* JSONEncodingDetectorTests.swift in Sources */,
+				52E130E51DD53709008A5396 /* JSONSerializingTests.swift in Sources */,
+				52E130E41DD53709008A5396 /* JSONParserTests.swift in Sources */,
+				52E130E61DD53709008A5396 /* JSONSubscriptingTests.swift in Sources */,
+				52E130E81DD53709008A5396 /* JSONTypeTests.swift in Sources */,
+				52E130F01DD53792008A5396 /* Person.swift in Sources */,
+				52E130E21DD53709008A5396 /* JSONEncodableTests.swift in Sources */,
+				52E130E71DD53709008A5396 /* JSONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6ADF711C23613200D77BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F70EA961C6D0D3200972CEB /* JSONSerializing.swift in Sources */,
+				DB6ADF931C2362E000D77BF1 /* JSON.swift in Sources */,
+				DB6ADFAB1C2362E000D77BF1 /* JSONSubscripting.swift in Sources */,
+				DB6ADFA31C2362E000D77BF1 /* JSONParsing.swift in Sources */,
+				DB6ADF9B1C2362E000D77BF1 /* JSONLiteralConvertible.swift in Sources */,
+				1C67C7291C3B27DD003D5A05 /* JSONEncodable.swift in Sources */,
+				DB6ADF9F1C2362E000D77BF1 /* JSONParser.swift in Sources */,
+				E43B67DE1C59598700ACE390 /* JSONEncodingDetector.swift in Sources */,
+				DB6ADF971C2362E000D77BF1 /* JSONDecodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB6ADF2C1C23610B00D77BF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6ADF1E1C23610B00D77BF1 /* MobileFreddy */;
+			targetProxy = DB6ADF2B1C23610B00D77BF1 /* PBXContainerItemProxy */;
+		};
+		DB6ADF4A1C23612000D77BF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6ADF3D1C23612000D77BF1 /* Freddy */;
+			targetProxy = DB6ADF491C23612000D77BF1 /* PBXContainerItemProxy */;
+		};
+		DB6ADF661C23612A00D77BF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6ADF591C23612900D77BF1 /* TVFreddy */;
+			targetProxy = DB6ADF651C23612A00D77BF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB6ADF311C23610B00D77BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF801C23617500D77BF1 /* Debug.xcconfig */;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB6ADF321C23610B00D77BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF821C23617500D77BF1 /* Release.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DB6ADF341C23610B00D77BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF811C23617500D77BF1 /* Framework.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB6ADF351C23610B00D77BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF811C23617500D77BF1 /* Framework.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB6ADF371C23610B00D77BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF831C23617500D77BF1 /* Tests.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/FreddyTests/Info.plist;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB6ADF381C23610B00D77BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF831C23617500D77BF1 /* Tests.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/FreddyTests/Info.plist;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DB6ADF501C23612000D77BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF811C23617500D77BF1 /* Framework.xcconfig */;
+			buildSettings = {
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB6ADF511C23612000D77BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF811C23617500D77BF1 /* Framework.xcconfig */;
+			buildSettings = {
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DB6ADF531C23612000D77BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF831C23617500D77BF1 /* Tests.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/FreddyTests/Info.plist;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB6ADF541C23612000D77BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF831C23617500D77BF1 /* Tests.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/FreddyTests/Info.plist;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DB6ADF6C1C23612A00D77BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF811C23617500D77BF1 /* Framework.xcconfig */;
+			buildSettings = {
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		DB6ADF6D1C23612A00D77BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF811C23617500D77BF1 /* Framework.xcconfig */;
+			buildSettings = {
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		DB6ADF6F1C23612A00D77BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF831C23617500D77BF1 /* Tests.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/FreddyTests/Info.plist;
+				SDKROOT = appletvos;
+			};
+			name = Debug;
+		};
+		DB6ADF701C23612A00D77BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF831C23617500D77BF1 /* Tests.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/FreddyTests/Info.plist;
+				SDKROOT = appletvos;
+			};
+			name = Release;
+		};
+		DB6ADF7C1C23613200D77BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF811C23617500D77BF1 /* Framework.xcconfig */;
+			buildSettings = {
+				SDKROOT = watchos;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		DB6ADF7D1C23613200D77BF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6ADF811C23617500D77BF1 /* Framework.xcconfig */;
+			buildSettings = {
+				SDKROOT = watchos;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB6ADF191C23610B00D77BF1 /* Build configuration list for PBXProject "Freddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6ADF311C23610B00D77BF1 /* Debug */,
+				DB6ADF321C23610B00D77BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6ADF331C23610B00D77BF1 /* Build configuration list for PBXNativeTarget "MobileFreddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6ADF341C23610B00D77BF1 /* Debug */,
+				DB6ADF351C23610B00D77BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6ADF361C23610B00D77BF1 /* Build configuration list for PBXNativeTarget "MobileFreddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6ADF371C23610B00D77BF1 /* Debug */,
+				DB6ADF381C23610B00D77BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6ADF4F1C23612000D77BF1 /* Build configuration list for PBXNativeTarget "Freddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6ADF501C23612000D77BF1 /* Debug */,
+				DB6ADF511C23612000D77BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6ADF521C23612000D77BF1 /* Build configuration list for PBXNativeTarget "FreddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6ADF531C23612000D77BF1 /* Debug */,
+				DB6ADF541C23612000D77BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6ADF6B1C23612A00D77BF1 /* Build configuration list for PBXNativeTarget "TVFreddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6ADF6C1C23612A00D77BF1 /* Debug */,
+				DB6ADF6D1C23612A00D77BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6ADF6E1C23612A00D77BF1 /* Build configuration list for PBXNativeTarget "TVFreddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6ADF6F1C23612A00D77BF1 /* Debug */,
+				DB6ADF701C23612A00D77BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6ADF7B1C23613200D77BF1 /* Build configuration list for PBXNativeTarget "NanoFreddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6ADF7C1C23613200D77BF1 /* Debug */,
+				DB6ADF7D1C23613200D77BF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB6ADF161C23610B00D77BF1 /* Project object */;
+}

@@ -1,0 +1,5 @@
+github "wokalski/Diff.swift" "0.5.1"
+github "bignerdranch/Freddy" "3.0.2"
+github "ReactiveKit/ReactiveKit" "v3.2.1"
+github "ReactiveKit/ReactiveAPI" "ec105e7ea3085b437acfa8620cf6df7cecbcc1cc"
+github "ReactiveKit/Bond" "cce0f708737c365e482e04544fd6f8754e9ec4f3"

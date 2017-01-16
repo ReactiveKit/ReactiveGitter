@@ -7,40 +7,62 @@
 //
 
 import UIKit
+import Bond
+import Scenes
+import Services
+import Networking
+import ReactiveAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  var authorizationCodeParser: TokenService.AuthorizationCodeParser!
+  var tokenService: TokenService!
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+
+    applyTheme()
+
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    let authorizationCodeParser = TokenService.AuthorizationCodeParser()
+    let tokenService = TokenService()
+
+    tokenService.token.bind(to: window) { window, token in
+      if let token = token {
+        let client = SafeClient(wrapping: APIClient(token: token))
+        let scene = RoomList(client: client).createScene()
+        let navigationController = UINavigationController(rootViewController: scene.viewController)
+        client.errors.bind(to: navigationController.reactive.userErrors)
+        window.rootViewController = navigationController
+        scene.logOut.bind(to: tokenService) { tokenService, _ in
+          tokenService.updateToken(nil)
+        }
+      } else {
+        let client = SafeClient(wrapping: AuthenticationAPIClient())
+        let authorizationCode = authorizationCodeParser.parsedCode
+        let scene = Authentication(client: client, authorizationCode: authorizationCode).createScene()
+        client.errors.bind(to: scene.viewController.reactive.userErrors)
+        window.rootViewController = scene.viewController
+        scene.tokenAcquired.bind(to: tokenService) { tokenService, token in
+          tokenService.updateToken(token)
+        }
+      }
+    }
+
+    self.window = window
+    self.authorizationCodeParser = authorizationCodeParser
+    self.tokenService = tokenService
+
+    window.makeKeyAndVisible()
     return true
   }
 
-  func applicationWillResignActive(_ application: UIApplication) {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+  func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    return authorizationCodeParser.parseAndHandleToken(url)
   }
 
-  func applicationDidEnterBackground(_ application: UIApplication) {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+  func applyTheme() {
+    UIView.appearance().tintColor = UIColor(red: 232/255, green: 33/255, blue: 102/255, alpha: 1)
   }
-
-  func applicationWillEnterForeground(_ application: UIApplication) {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-  }
-
-  func applicationDidBecomeActive(_ application: UIApplication) {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-  }
-
-  func applicationWillTerminate(_ application: UIApplication) {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-  }
-
-
 }
-
