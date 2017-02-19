@@ -13,10 +13,12 @@
 		EC1772CB1E2D280000BACD71 /* RoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1772C61E2D280000BACD71 /* RoomList.swift */; };
 		EC1772CC1E2D280000BACD71 /* RoomMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1772C71E2D280000BACD71 /* RoomMessages.swift */; };
 		EC1772CE1E2D296E00BACD71 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1772CD1E2D296E00BACD71 /* Extensions.swift */; };
+		EC19E0991E59ED7500F572E9 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC19E0941E59ED7500F572E9 /* Authentication.swift */; };
+		EC19E09B1E59ED7500F572E9 /* Interactors.h in Headers */ = {isa = PBXBuildFile; fileRef = EC19E0961E59ED7500F572E9 /* Interactors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC19E09C1E59ED7500F572E9 /* RoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC19E0971E59ED7500F572E9 /* RoomList.swift */; };
+		EC19E09D1E59ED7500F572E9 /* RoomMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC19E0981E59ED7500F572E9 /* RoomMessages.swift */; };
 		EC28BB4C1E2B915E002F34FE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC28BB4B1E2B915E002F34FE /* Extensions.swift */; };
 		EC28BB4E1E2BD763002F34FE /* RoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC28BB4D1E2BD763002F34FE /* RoomList.swift */; };
-		EC28BB501E2BD76E002F34FE /* RoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC28BB4F1E2BD76E002F34FE /* RoomList.swift */; };
-		EC28BB641E2C0481002F34FE /* RoomMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC28BB631E2C0481002F34FE /* RoomMessages.swift */; };
 		EC28BB6A1E2C065E002F34FE /* RoomMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC28BB691E2C065E002F34FE /* RoomMessages.swift */; };
 		EC6568251E2A926600B19CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6568241E2A926600B19CA5 /* AppDelegate.swift */; };
 		EC65682C1E2A926600B19CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC65682B1E2A926600B19CA5 /* Assets.xcassets */; };
@@ -53,10 +55,8 @@
 		EC98C7C61E2B781A00E3036A /* ReactiveAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */; };
 		EC98C7C71E2B781A00E3036A /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */; };
 		EC98C7C81E2B782A00E3036A /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65685B1E2A94BF00B19CA5 /* Freddy.framework */; };
-		EC98C7D41E2B7B0C00E3036A /* Services.h in Headers */ = {isa = PBXBuildFile; fileRef = EC98C7D21E2B7B0C00E3036A /* Services.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC98C7D71E2B7B0C00E3036A /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C7D01E2B7B0C00E3036A /* Services.framework */; };
-		EC98C7D81E2B7B0C00E3036A /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C7D01E2B7B0C00E3036A /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC98C7DD1E2B7BD400E3036A /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98C7DC1E2B7BD400E3036A /* Authentication.swift */; };
+		EC98C7D71E2B7B0C00E3036A /* Interactors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C7D01E2B7B0C00E3036A /* Interactors.framework */; };
+		EC98C7D81E2B7B0C00E3036A /* Interactors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C7D01E2B7B0C00E3036A /* Interactors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC98C7E21E2B7BF900E3036A /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6568381E2A93A200B19CA5 /* Bond.framework */; };
 		EC98C7E31E2B7BF900E3036A /* ReactiveAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */; };
 		EC98C7E41E2B7BF900E3036A /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */; };
@@ -172,7 +172,7 @@
 			files = (
 				EC65685E1E2A94D500B19CA5 /* Freddy.framework in Embed Frameworks */,
 				EC6568501E2A93B900B19CA5 /* ReactiveKit.framework in Embed Frameworks */,
-				EC98C7D81E2B7B0C00E3036A /* Services.framework in Embed Frameworks */,
+				EC98C7D81E2B7B0C00E3036A /* Interactors.framework in Embed Frameworks */,
 				EC65684A1E2A93B900B19CA5 /* Bond.framework in Embed Frameworks */,
 				EC65684C1E2A93B900B19CA5 /* Diff.framework in Embed Frameworks */,
 				EC98C7FA1E2B7DF100E3036A /* Views.framework in Embed Frameworks */,
@@ -193,10 +193,13 @@
 		EC1772C61E2D280000BACD71 /* RoomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomList.swift; sourceTree = "<group>"; };
 		EC1772C71E2D280000BACD71 /* RoomMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomMessages.swift; sourceTree = "<group>"; };
 		EC1772CD1E2D296E00BACD71 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EC19E0941E59ED7500F572E9 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Interactors/Authentication.swift; sourceTree = SOURCE_ROOT; };
+		EC19E0951E59ED7500F572E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Interactors/Info.plist; sourceTree = SOURCE_ROOT; };
+		EC19E0961E59ED7500F572E9 /* Interactors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Interactors.h; path = Interactors/Interactors.h; sourceTree = SOURCE_ROOT; };
+		EC19E0971E59ED7500F572E9 /* RoomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoomList.swift; path = Interactors/RoomList.swift; sourceTree = SOURCE_ROOT; };
+		EC19E0981E59ED7500F572E9 /* RoomMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoomMessages.swift; path = Interactors/RoomMessages.swift; sourceTree = SOURCE_ROOT; };
 		EC28BB4B1E2B915E002F34FE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EC28BB4D1E2BD763002F34FE /* RoomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomList.swift; sourceTree = "<group>"; };
-		EC28BB4F1E2BD76E002F34FE /* RoomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomList.swift; sourceTree = "<group>"; };
-		EC28BB631E2C0481002F34FE /* RoomMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomMessages.swift; sourceTree = "<group>"; };
 		EC28BB691E2C065E002F34FE /* RoomMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomMessages.swift; sourceTree = "<group>"; };
 		EC6568211E2A926600B19CA5 /* ReactiveGitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveGitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6568241E2A926600B19CA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -227,10 +230,7 @@
 		EC98C7BA1E2B780200E3036A /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		EC98C7BB1E2B780200E3036A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC98C7BC1E2B780200E3036A /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		EC98C7D01E2B7B0C00E3036A /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC98C7D21E2B7B0C00E3036A /* Services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
-		EC98C7D31E2B7B0C00E3036A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC98C7DC1E2B7BD400E3036A /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		EC98C7D01E2B7B0C00E3036A /* Interactors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Interactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC98C7F21E2B7DF100E3036A /* Views.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Views.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC98C7F41E2B7DF100E3036A /* Views.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Views.h; sourceTree = "<group>"; };
 		EC98C7F51E2B7DF100E3036A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 			files = (
 				EC65685D1E2A94D500B19CA5 /* Freddy.framework in Frameworks */,
 				EC65684F1E2A93B900B19CA5 /* ReactiveKit.framework in Frameworks */,
-				EC98C7D71E2B7B0C00E3036A /* Services.framework in Frameworks */,
+				EC98C7D71E2B7B0C00E3036A /* Interactors.framework in Frameworks */,
 				EC6568491E2A93B900B19CA5 /* Bond.framework in Frameworks */,
 				EC65684B1E2A93B900B19CA5 /* Diff.framework in Frameworks */,
 				EC98C7F91E2B7DF100E3036A /* Views.framework in Frameworks */,
@@ -336,7 +336,7 @@
 				EC6568231E2A926600B19CA5 /* ReactiveGitter */,
 				EC98C8091E2B7FFF00E3036A /* Scenes */,
 				EC98C7F31E2B7DF100E3036A /* Views */,
-				EC98C7D11E2B7B0C00E3036A /* Services */,
+				EC98C7D11E2B7B0C00E3036A /* Interactors */,
 				EC98C7AB1E2B77E700E3036A /* Networking */,
 				EC98C78F1E2B763000E3036A /* Entities */,
 				EC6568361E2A92CC00B19CA5 /* Dependencies */,
@@ -350,7 +350,7 @@
 				EC6568211E2A926600B19CA5 /* ReactiveGitter.app */,
 				EC98C78E1E2B763000E3036A /* Entities.framework */,
 				EC98C7AA1E2B77E700E3036A /* Networking.framework */,
-				EC98C7D01E2B7B0C00E3036A /* Services.framework */,
+				EC98C7D01E2B7B0C00E3036A /* Interactors.framework */,
 				EC98C7F21E2B7DF100E3036A /* Views.framework */,
 				EC98C8081E2B7FFF00E3036A /* Scenes.framework */,
 			);
@@ -412,15 +412,16 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		EC98C7D11E2B7B0C00E3036A /* Services */ = {
+		EC98C7D11E2B7B0C00E3036A /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				EC98C7D21E2B7B0C00E3036A /* Services.h */,
-				EC98C7D31E2B7B0C00E3036A /* Info.plist */,
-				EC98C7DC1E2B7BD400E3036A /* Authentication.swift */,
-				EC28BB4F1E2BD76E002F34FE /* RoomList.swift */,
-				EC28BB631E2C0481002F34FE /* RoomMessages.swift */,
+				EC19E0961E59ED7500F572E9 /* Interactors.h */,
+				EC19E0951E59ED7500F572E9 /* Info.plist */,
+				EC19E0941E59ED7500F572E9 /* Authentication.swift */,
+				EC19E0971E59ED7500F572E9 /* RoomList.swift */,
+				EC19E0981E59ED7500F572E9 /* RoomMessages.swift */,
 			);
+			name = Interactors;
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -472,7 +473,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC98C7D41E2B7B0C00E3036A /* Services.h in Headers */,
+				EC19E09B1E59ED7500F572E9 /* Interactors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,9 +557,9 @@
 			productReference = EC98C7AA1E2B77E700E3036A /* Networking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EC98C7CF1E2B7B0C00E3036A /* Services */ = {
+		EC98C7CF1E2B7B0C00E3036A /* Interactors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC98C7D91E2B7B0C00E3036A /* Build configuration list for PBXNativeTarget "Services" */;
+			buildConfigurationList = EC98C7D91E2B7B0C00E3036A /* Build configuration list for PBXNativeTarget "Interactors" */;
 			buildPhases = (
 				EC98C7CB1E2B7B0C00E3036A /* Sources */,
 				EC98C7CC1E2B7B0C00E3036A /* Frameworks */,
@@ -571,9 +572,9 @@
 				EC98C7DF1E2B7BE100E3036A /* PBXTargetDependency */,
 				EC98C7E11E2B7BE100E3036A /* PBXTargetDependency */,
 			);
-			name = Services;
+			name = Interactors;
 			productName = Services;
-			productReference = EC98C7D01E2B7B0C00E3036A /* Services.framework */;
+			productReference = EC98C7D01E2B7B0C00E3036A /* Interactors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EC98C7F11E2B7DF100E3036A /* Views */ = {
@@ -673,7 +674,7 @@
 				EC6568201E2A926600B19CA5 /* ReactiveGitter */,
 				EC98C78D1E2B763000E3036A /* Entities */,
 				EC98C7A91E2B77E700E3036A /* Networking */,
-				EC98C7CF1E2B7B0C00E3036A /* Services */,
+				EC98C7CF1E2B7B0C00E3036A /* Interactors */,
 				EC98C7F11E2B7DF100E3036A /* Views */,
 				EC98C8071E2B7FFF00E3036A /* Scenes */,
 			);
@@ -790,9 +791,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC28BB501E2BD76E002F34FE /* RoomList.swift in Sources */,
-				EC28BB641E2C0481002F34FE /* RoomMessages.swift in Sources */,
-				EC98C7DD1E2B7BD400E3036A /* Authentication.swift in Sources */,
+				EC19E09C1E59ED7500F572E9 /* RoomList.swift in Sources */,
+				EC19E09D1E59ED7500F572E9 /* RoomMessages.swift in Sources */,
+				EC19E0991E59ED7500F572E9 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,7 +841,7 @@
 		};
 		EC98C7D61E2B7B0C00E3036A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC98C7CF1E2B7B0C00E3036A /* Services */;
+			target = EC98C7CF1E2B7B0C00E3036A /* Interactors */;
 			targetProxy = EC98C7D51E2B7B0C00E3036A /* PBXContainerItemProxy */;
 		};
 		EC98C7DF1E2B7BE100E3036A /* PBXTargetDependency */ = {
@@ -875,7 +876,7 @@
 		};
 		EC98C81F1E2B804F00E3036A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC98C7CF1E2B7B0C00E3036A /* Services */;
+			target = EC98C7CF1E2B7B0C00E3036A /* Interactors */;
 			targetProxy = EC98C81E1E2B804F00E3036A /* PBXContainerItemProxy */;
 		};
 		EC98C8211E2B804F00E3036A /* PBXTargetDependency */ = {
@@ -1144,10 +1145,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Services/Info.plist;
+				INFOPLIST_FILE = Interactors/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reactivekit.Services;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactivekit.Interactors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1171,10 +1172,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Services/Info.plist;
+				INFOPLIST_FILE = Interactors/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reactivekit.Services;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reactivekit.Interactors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1320,7 +1321,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC98C7D91E2B7B0C00E3036A /* Build configuration list for PBXNativeTarget "Services" */ = {
+		EC98C7D91E2B7B0C00E3036A /* Build configuration list for PBXNativeTarget "Interactors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC98C7DA1E2B7B0C00E3036A /* Debug */,

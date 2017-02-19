@@ -9,7 +9,7 @@
 import UIKit
 import Bond
 import Scenes
-import Services
+import Interactors
 import Networking
 import ReactiveAPI
 

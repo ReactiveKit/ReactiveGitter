@@ -11,7 +11,7 @@ import Entities
 import ReactiveKit
 import ReactiveAPI
 import Networking
-import Services
+import Interactors
 
 open class TokenService: NSObject {
 
