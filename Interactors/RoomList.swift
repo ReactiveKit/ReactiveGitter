@@ -11,7 +11,7 @@ import Networking
 import ReactiveAPI
 import ReactiveKit
 
-public struct RoomList {
+public class RoomList {
 
   public let client: SafeClient
   public let rooms: SafeSignal<[Room]>

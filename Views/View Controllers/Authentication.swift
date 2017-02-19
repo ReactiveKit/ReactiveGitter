@@ -8,8 +8,6 @@
 
 import UIKit
 
-public enum ViewController {}
-
 extension ViewController {
 
   public class Authentication: UIViewController {

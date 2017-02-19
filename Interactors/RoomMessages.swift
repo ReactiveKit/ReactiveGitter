@@ -11,7 +11,7 @@ import Networking
 import ReactiveAPI
 import ReactiveKit
 
-public struct RoomMessages {
+public class RoomMessages {
 
   public let messages: SafeSignal<[Message]>
   public let sendMessage: SafeObserver<String>

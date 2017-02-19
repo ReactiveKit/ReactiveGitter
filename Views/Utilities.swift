@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+public enum ViewController {}
+
 public protocol SetupProtocol: AnyObject {}
 
 extension SetupProtocol {

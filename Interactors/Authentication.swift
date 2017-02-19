@@ -15,7 +15,7 @@ private let clientID = "31625d251b64ec0f01b19577c150f8bcb8c5f6a3"
 private let secret = "e629e37430a3a37905f642972caf3e6dce28d819"
 private let redirectURI = "reactive-gitter://token"
 
-public struct Authentication {
+public class Authentication {
 
   public enum AuthorizationResponse {
     case authorized(String)
