@@ -8,7 +8,6 @@
 
 import Entities
 import Networking
-import ReactiveAPI
 import ReactiveKit
 
 public class RoomList {

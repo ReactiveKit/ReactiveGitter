@@ -7,18 +7,25 @@
 //
 
 import Entities
-import ReactiveAPI
+import Client
 
 extension Token {
 
   public static func get(clientID: String, secret: String, code: String, redirectURI: String) -> Request<Token, APIError> {
-    let params: [String: Any] = [
-      "client_id": clientID as Any,
-      "client_secret": secret as Any,
-      "code": code as Any,
-      "redirect_uri": redirectURI as Any,
-      "grant_type": "authorization_code" as Any
+    let params: [String: String] = [
+      "client_id": clientID,
+      "client_secret": secret,
+      "code": code,
+      "redirect_uri": redirectURI,
+      "grant_type": "authorization_code"
     ]
-    return Request(path: "token", method: .post, parameters: JSONParameters(params), resource: Token.init, error: APIError.init)
+    return Request(
+        path: "token",
+        method: .post,
+        parameters: JSONParameters(params),
+        resource: Token.init,
+        error: APIError.init,
+        needsAuthorization: true
+    )
   }
 }

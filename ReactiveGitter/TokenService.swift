@@ -9,7 +9,6 @@
 import Foundation
 import Entities
 import ReactiveKit
-import ReactiveAPI
 import Networking
 import Interactors
 

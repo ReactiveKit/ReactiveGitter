@@ -7,12 +7,18 @@
 //
 
 import Entities
-import ReactiveAPI
+import Client
 
 extension Message {
 
   public func update(text: String, roomId: String) -> Request<Message, APIError> {
-    let params = JSONParameters(["text": text])
-    return Request(path: "rooms/\(roomId)/chatMessages/\(id)", method: .put, parameters: params, resource: Message.init, error: APIError.init)
+    return Request(
+        path: "rooms/\(roomId)/chatMessages/\(id)",
+        method: .put,
+        parameters: JSONParameters(["text": text]),
+        resource: Message.init,
+        error: APIError.init,
+        needsAuthorization: true
+    )
   }
 }

@@ -11,7 +11,6 @@ import Bond
 import Scenes
 import Interactors
 import Networking
-import ReactiveAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -35,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: scene.viewController)
         client.errors.bind(to: navigationController.reactive.userErrors)
         window.rootViewController = navigationController
-        scene.logOut.bind(to: tokenService) { tokenService, _ in
+        scene.logOut.bind(to: tokenService, context: .immediateOnMain) { tokenService, _ in
           tokenService.updateToken(nil)
         }
       } else {
@@ -44,8 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let scene = Authentication(client: client, authorizationCode: authorizationCode).createScene()
         client.errors.bind(to: scene.viewController.reactive.userErrors)
         window.rootViewController = scene.viewController
-        scene.tokenAcquired.bind(to: tokenService) { tokenService, token in
-          tokenService.updateToken(token)
+        scene.tokenAcquired.bind(to: tokenService, context: .immediateOnMain) { tokenService, token in
+            tokenService.updateToken(token)
         }
       }
     }

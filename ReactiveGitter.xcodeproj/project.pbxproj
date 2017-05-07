@@ -20,6 +20,21 @@
 		EC28BB4C1E2B915E002F34FE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC28BB4B1E2B915E002F34FE /* Extensions.swift */; };
 		EC28BB4E1E2BD763002F34FE /* RoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC28BB4D1E2BD763002F34FE /* RoomList.swift */; };
 		EC28BB6A1E2C065E002F34FE /* RoomMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC28BB691E2C065E002F34FE /* RoomMessages.swift */; };
+		EC531A121EBF043F002FBADF /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = EC531A101EBF043F002FBADF /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC531A151EBF043F002FBADF /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC531A0E1EBF043E002FBADF /* Client.framework */; };
+		EC531A161EBF043F002FBADF /* Client.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC531A0E1EBF043E002FBADF /* Client.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC531A201EBF10D9002FBADF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC531A1A1EBF10D9002FBADF /* Client.swift */; };
+		EC531A211EBF10D9002FBADF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC531A1B1EBF10D9002FBADF /* HTTPMethod.swift */; };
+		EC531A221EBF10D9002FBADF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC531A1C1EBF10D9002FBADF /* Request.swift */; };
+		EC531A231EBF10D9002FBADF /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC531A1D1EBF10D9002FBADF /* RequestParameters.swift */; };
+		EC531A241EBF10D9002FBADF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC531A1E1EBF10D9002FBADF /* Result.swift */; };
+		EC531A251EBF10D9002FBADF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC531A1F1EBF10D9002FBADF /* Utilities.swift */; };
+		EC531A291EBF1592002FBADF /* SafeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC531A281EBF1592002FBADF /* SafeClient.swift */; };
+		EC531A2B1EBF15C3002FBADF /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC531A2A1EBF15C3002FBADF /* Activity.swift */; };
+		EC531A2C1EBF15FE002FBADF /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC531A0E1EBF043E002FBADF /* Client.framework */; };
+		EC531A2F1EBF1621002FBADF /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC531A0E1EBF043E002FBADF /* Client.framework */; };
+		EC531A301EBF1625002FBADF /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C7AA1E2B77E700E3036A /* Networking.framework */; };
+		EC531A311EBF1628002FBADF /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C78E1E2B763000E3036A /* Entities.framework */; };
 		EC6568251E2A926600B19CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6568241E2A926600B19CA5 /* AppDelegate.swift */; };
 		EC65682C1E2A926600B19CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC65682B1E2A926600B19CA5 /* Assets.xcassets */; };
 		EC65682F1E2A926600B19CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC65682D1E2A926600B19CA5 /* LaunchScreen.storyboard */; };
@@ -27,8 +42,6 @@
 		EC65684A1E2A93B900B19CA5 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6568381E2A93A200B19CA5 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC65684B1E2A93B900B19CA5 /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6568391E2A93A200B19CA5 /* Diff.framework */; };
 		EC65684C1E2A93B900B19CA5 /* Diff.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6568391E2A93A200B19CA5 /* Diff.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC65684D1E2A93B900B19CA5 /* ReactiveAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */; };
-		EC65684E1E2A93B900B19CA5 /* ReactiveAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC65684F1E2A93B900B19CA5 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */; };
 		EC6568501E2A93B900B19CA5 /* ReactiveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC65685D1E2A94D500B19CA5 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65685B1E2A94BF00B19CA5 /* Freddy.framework */; };
@@ -52,13 +65,11 @@
 		EC98C7C11E2B780200E3036A /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98C7BA1E2B780200E3036A /* Token.swift */; };
 		EC98C7C21E2B780200E3036A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98C7BB1E2B780200E3036A /* User.swift */; };
 		EC98C7C31E2B780200E3036A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98C7BC1E2B780200E3036A /* Utilities.swift */; };
-		EC98C7C61E2B781A00E3036A /* ReactiveAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */; };
 		EC98C7C71E2B781A00E3036A /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */; };
 		EC98C7C81E2B782A00E3036A /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65685B1E2A94BF00B19CA5 /* Freddy.framework */; };
 		EC98C7D71E2B7B0C00E3036A /* Interactors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C7D01E2B7B0C00E3036A /* Interactors.framework */; };
 		EC98C7D81E2B7B0C00E3036A /* Interactors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C7D01E2B7B0C00E3036A /* Interactors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC98C7E21E2B7BF900E3036A /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6568381E2A93A200B19CA5 /* Bond.framework */; };
-		EC98C7E31E2B7BF900E3036A /* ReactiveAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */; };
 		EC98C7E41E2B7BF900E3036A /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */; };
 		EC98C7E51E2B7BFE00E3036A /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6568391E2A93A200B19CA5 /* Diff.framework */; };
 		EC98C7F61E2B7DF100E3036A /* Views.h in Headers */ = {isa = PBXBuildFile; fileRef = EC98C7F41E2B7DF100E3036A /* Views.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,13 +81,26 @@
 		EC98C8101E2B7FFF00E3036A /* Scenes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C8081E2B7FFF00E3036A /* Scenes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC98C8151E2B801F00E3036A /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98C8141E2B801F00E3036A /* Authentication.swift */; };
 		EC98C8161E2B803D00E3036A /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6568381E2A93A200B19CA5 /* Bond.framework */; };
-		EC98C8171E2B803D00E3036A /* ReactiveAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */; };
 		EC98C8181E2B803D00E3036A /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */; };
 		EC98C8191E2B803D00E3036A /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6568391E2A93A200B19CA5 /* Diff.framework */; };
 		EC98C8231E2B827800E3036A /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98C8221E2B827800E3036A /* TokenService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EC531A131EBF043F002FBADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6568191E2A926600B19CA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC531A0D1EBF043E002FBADF;
+			remoteInfo = Client;
+		};
+		EC531A2D1EBF1614002FBADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6568191E2A926600B19CA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC531A0D1EBF043E002FBADF;
+			remoteInfo = Client;
+		};
 		EC98C7931E2B763000E3036A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EC6568191E2A926600B19CA5 /* Project object */;
@@ -176,9 +200,9 @@
 				EC65684A1E2A93B900B19CA5 /* Bond.framework in Embed Frameworks */,
 				EC65684C1E2A93B900B19CA5 /* Diff.framework in Embed Frameworks */,
 				EC98C7FA1E2B7DF100E3036A /* Views.framework in Embed Frameworks */,
-				EC65684E1E2A93B900B19CA5 /* ReactiveAPI.framework in Embed Frameworks */,
 				EC98C7961E2B763000E3036A /* Entities.framework in Embed Frameworks */,
 				EC98C7B21E2B77E700E3036A /* Networking.framework in Embed Frameworks */,
+				EC531A161EBF043F002FBADF /* Client.framework in Embed Frameworks */,
 				EC98C8101E2B7FFF00E3036A /* Scenes.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -201,6 +225,17 @@
 		EC28BB4B1E2B915E002F34FE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EC28BB4D1E2BD763002F34FE /* RoomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomList.swift; sourceTree = "<group>"; };
 		EC28BB691E2C065E002F34FE /* RoomMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomMessages.swift; sourceTree = "<group>"; };
+		EC531A0E1EBF043E002FBADF /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC531A101EBF043F002FBADF /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		EC531A111EBF043F002FBADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC531A1A1EBF10D9002FBADF /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		EC531A1B1EBF10D9002FBADF /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		EC531A1C1EBF10D9002FBADF /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		EC531A1D1EBF10D9002FBADF /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
+		EC531A1E1EBF10D9002FBADF /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		EC531A1F1EBF10D9002FBADF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EC531A281EBF1592002FBADF /* SafeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeClient.swift; sourceTree = "<group>"; };
+		EC531A2A1EBF15C3002FBADF /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		EC6568211E2A926600B19CA5 /* ReactiveGitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveGitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6568241E2A926600B19CA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC65682B1E2A926600B19CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,7 +243,6 @@
 		EC6568301E2A926600B19CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6568381E2A93A200B19CA5 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
 		EC6568391E2A93A200B19CA5 /* Diff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Diff.framework; path = Carthage/Build/iOS/Diff.framework; sourceTree = "<group>"; };
-		EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveAPI.framework; path = Carthage/Build/iOS/ReactiveAPI.framework; sourceTree = "<group>"; };
 		EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
 		EC6568591E2A943700B19CA5 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		EC65685B1E2A94BF00B19CA5 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
@@ -243,6 +277,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EC531A0A1EBF043E002FBADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC65681E1E2A926600B19CA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,9 +294,9 @@
 				EC6568491E2A93B900B19CA5 /* Bond.framework in Frameworks */,
 				EC65684B1E2A93B900B19CA5 /* Diff.framework in Frameworks */,
 				EC98C7F91E2B7DF100E3036A /* Views.framework in Frameworks */,
-				EC65684D1E2A93B900B19CA5 /* ReactiveAPI.framework in Frameworks */,
 				EC98C7951E2B763000E3036A /* Entities.framework in Frameworks */,
 				EC98C7B11E2B77E700E3036A /* Networking.framework in Frameworks */,
+				EC531A151EBF043F002FBADF /* Client.framework in Frameworks */,
 				EC98C80F1E2B7FFF00E3036A /* Scenes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +313,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC531A2C1EBF15FE002FBADF /* Client.framework in Frameworks */,
 				EC98C7C71E2B781A00E3036A /* ReactiveKit.framework in Frameworks */,
 				EC98C7C81E2B782A00E3036A /* Freddy.framework in Frameworks */,
-				EC98C7C61E2B781A00E3036A /* ReactiveAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +323,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC98C7E31E2B7BF900E3036A /* ReactiveAPI.framework in Frameworks */,
+				EC531A311EBF1628002FBADF /* Entities.framework in Frameworks */,
+				EC531A301EBF1625002FBADF /* Networking.framework in Frameworks */,
+				EC531A2F1EBF1621002FBADF /* Client.framework in Frameworks */,
 				EC98C7E41E2B7BF900E3036A /* ReactiveKit.framework in Frameworks */,
 				EC98C7E21E2B7BF900E3036A /* Bond.framework in Frameworks */,
 				EC98C7E51E2B7BFE00E3036A /* Diff.framework in Frameworks */,
@@ -300,7 +343,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC98C8171E2B803D00E3036A /* ReactiveAPI.framework in Frameworks */,
 				EC98C8181E2B803D00E3036A /* ReactiveKit.framework in Frameworks */,
 				EC98C8161E2B803D00E3036A /* Bond.framework in Frameworks */,
 				EC98C8191E2B803D00E3036A /* Diff.framework in Frameworks */,
@@ -329,6 +371,21 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		EC531A0F1EBF043F002FBADF /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				EC531A101EBF043F002FBADF /* Client.h */,
+				EC531A111EBF043F002FBADF /* Info.plist */,
+				EC531A1A1EBF10D9002FBADF /* Client.swift */,
+				EC531A1B1EBF10D9002FBADF /* HTTPMethod.swift */,
+				EC531A1C1EBF10D9002FBADF /* Request.swift */,
+				EC531A1D1EBF10D9002FBADF /* RequestParameters.swift */,
+				EC531A1E1EBF10D9002FBADF /* Result.swift */,
+				EC531A1F1EBF10D9002FBADF /* Utilities.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 		EC6568181E2A926600B19CA5 = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +395,7 @@
 				EC98C7F31E2B7DF100E3036A /* Views */,
 				EC98C7D11E2B7B0C00E3036A /* Interactors */,
 				EC98C7AB1E2B77E700E3036A /* Networking */,
+				EC531A0F1EBF043F002FBADF /* Client */,
 				EC98C78F1E2B763000E3036A /* Entities */,
 				EC6568361E2A92CC00B19CA5 /* Dependencies */,
 				EC6568221E2A926600B19CA5 /* Products */,
@@ -353,6 +411,7 @@
 				EC98C7D01E2B7B0C00E3036A /* Interactors.framework */,
 				EC98C7F21E2B7DF100E3036A /* Views.framework */,
 				EC98C8081E2B7FFF00E3036A /* Scenes.framework */,
+				EC531A0E1EBF043E002FBADF /* Client.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,7 +434,6 @@
 			children = (
 				EC65685B1E2A94BF00B19CA5 /* Freddy.framework */,
 				EC6568381E2A93A200B19CA5 /* Bond.framework */,
-				EC65683A1E2A93A200B19CA5 /* ReactiveAPI.framework */,
 				EC65683B1E2A93A200B19CA5 /* ReactiveKit.framework */,
 				EC6568391E2A93A200B19CA5 /* Diff.framework */,
 			);
@@ -402,6 +460,8 @@
 				EC98C7AC1E2B77E700E3036A /* Networking.h */,
 				EC98C7AD1E2B77E700E3036A /* Info.plist */,
 				EC98C7B71E2B780200E3036A /* Client.swift */,
+				EC531A281EBF1592002FBADF /* SafeClient.swift */,
+				EC531A2A1EBF15C3002FBADF /* Activity.swift */,
 				EC98C7B81E2B780200E3036A /* Message.swift */,
 				EC98C7B91E2B780200E3036A /* Room.swift */,
 				EC98C7BA1E2B780200E3036A /* Token.swift */,
@@ -453,6 +513,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		EC531A0B1EBF043E002FBADF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC531A121EBF043F002FBADF /* Client.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC98C78B1E2B763000E3036A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,6 +564,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		EC531A0D1EBF043E002FBADF /* Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC531A191EBF043F002FBADF /* Build configuration list for PBXNativeTarget "Client" */;
+			buildPhases = (
+				EC531A091EBF043E002FBADF /* Sources */,
+				EC531A0A1EBF043E002FBADF /* Frameworks */,
+				EC531A0B1EBF043E002FBADF /* Headers */,
+				EC531A0C1EBF043E002FBADF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Client;
+			productName = Client;
+			productReference = EC531A0E1EBF043E002FBADF /* Client.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EC6568201E2A926600B19CA5 /* ReactiveGitter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6568331E2A926600B19CA5 /* Build configuration list for PBXNativeTarget "ReactiveGitter" */;
@@ -514,6 +600,7 @@
 				EC98C7D61E2B7B0C00E3036A /* PBXTargetDependency */,
 				EC98C7F81E2B7DF100E3036A /* PBXTargetDependency */,
 				EC98C80E1E2B7FFF00E3036A /* PBXTargetDependency */,
+				EC531A141EBF043F002FBADF /* PBXTargetDependency */,
 			);
 			name = ReactiveGitter;
 			productName = ReactiveGitter;
@@ -550,6 +637,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EC531A2E1EBF1614002FBADF /* PBXTargetDependency */,
 				EC98C7CA1E2B78F000E3036A /* PBXTargetDependency */,
 			);
 			name = Networking;
@@ -627,6 +715,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ReactiveKit;
 				TargetAttributes = {
+					EC531A0D1EBF043E002FBADF = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
 					EC6568201E2A926600B19CA5 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -677,11 +770,19 @@
 				EC98C7CF1E2B7B0C00E3036A /* Interactors */,
 				EC98C7F11E2B7DF100E3036A /* Views */,
 				EC98C8071E2B7FFF00E3036A /* Scenes */,
+				EC531A0D1EBF043E002FBADF /* Client */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EC531A0C1EBF043E002FBADF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC65681F1E2A926600B19CA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -737,7 +838,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Diff.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveAPI.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Bond.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Freddy.framework",
 			);
@@ -751,6 +851,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EC531A091EBF043E002FBADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC531A251EBF10D9002FBADF /* Utilities.swift in Sources */,
+				EC531A211EBF10D9002FBADF /* HTTPMethod.swift in Sources */,
+				EC531A241EBF10D9002FBADF /* Result.swift in Sources */,
+				EC531A221EBF10D9002FBADF /* Request.swift in Sources */,
+				EC531A201EBF10D9002FBADF /* Client.swift in Sources */,
+				EC531A231EBF10D9002FBADF /* RequestParameters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC65681D1E2A926600B19CA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -778,10 +891,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC98C7BF1E2B780200E3036A /* Message.swift in Sources */,
+				EC531A291EBF1592002FBADF /* SafeClient.swift in Sources */,
 				EC98C7C11E2B780200E3036A /* Token.swift in Sources */,
 				EC98C7C31E2B780200E3036A /* Utilities.swift in Sources */,
 				EC98C7C21E2B780200E3036A /* User.swift in Sources */,
 				EC98C7BE1E2B780200E3036A /* Client.swift in Sources */,
+				EC531A2B1EBF15C3002FBADF /* Activity.swift in Sources */,
 				EC98C7C01E2B780200E3036A /* Room.swift in Sources */,
 				EC98C7BD1E2B780200E3036A /* APIError.swift in Sources */,
 			);
@@ -824,6 +939,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EC531A141EBF043F002FBADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC531A0D1EBF043E002FBADF /* Client */;
+			targetProxy = EC531A131EBF043F002FBADF /* PBXContainerItemProxy */;
+		};
+		EC531A2E1EBF1614002FBADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC531A0D1EBF043E002FBADF /* Client */;
+			targetProxy = EC531A2D1EBF1614002FBADF /* PBXContainerItemProxy */;
+		};
 		EC98C7941E2B763000E3036A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EC98C78D1E2B763000E3036A /* Entities */;
@@ -898,6 +1023,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EC531A171EBF043F002FBADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Client/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.srdanrasic.Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC531A181EBF043F002FBADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Client/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.srdanrasic.Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		EC6568311E2A926600B19CA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -938,7 +1112,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -982,7 +1156,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1285,6 +1459,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EC531A191EBF043F002FBADF /* Build configuration list for PBXNativeTarget "Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC531A171EBF043F002FBADF /* Debug */,
+				EC531A181EBF043F002FBADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EC65681C1E2A926600B19CA5 /* Build configuration list for PBXProject "ReactiveGitter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

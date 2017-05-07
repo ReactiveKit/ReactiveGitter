@@ -8,7 +8,6 @@
 
 import Entities
 import Networking
-import ReactiveAPI
 import ReactiveKit
 
 private let clientID = "31625d251b64ec0f01b19577c150f8bcb8c5f6a3"

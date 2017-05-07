@@ -8,36 +8,19 @@
 
 import Foundation
 import Freddy
-import ReactiveAPI
+import Client
 import ReactiveKit
-
-// TODO: Move to Frameworks
-
-extension Dictionary where Value: OptionalProtocol {
-
-  public var nonNils: [Key: Value.Wrapped] {
-    var result: [Key: Value.Wrapped] = [:]
-
-    forEach { pair in
-      if let value = pair.value._unbox {
-        result[pair.key] = value
-      }
-    }
-
-    return result
-  }
-}
 
 extension JSONParameters {
 
-  public init(_ jsonOfOptionals: [String: Any?]) {
+  public init(nonNil jsonOfOptionals: [String: Any?]) {
     self.init(jsonOfOptionals.nonNils)
   }
 }
 
 extension QueryParameters {
 
-  public init(_ dictionaryOfOptionals: [String: String?]) {
+  public init(nonNil dictionaryOfOptionals: [String: String?]) {
     self.init(dictionaryOfOptionals.nonNils)
   }
 }

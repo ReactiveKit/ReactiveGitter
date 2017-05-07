@@ -9,7 +9,6 @@
 import UIKit
 import Networking
 import ReactiveKit
-import ReactiveAPI
 import Bond
 
 extension ReactiveExtensions where Base: UIViewController {

@@ -1,4 +1,3 @@
 github "ReactiveKit/Bond" "master"
-github "ReactiveKit/ReactiveAPI" "master"
 github "ReactiveKit/ReactiveKit"
 github "bignerdranch/Freddy" ~> 3.0

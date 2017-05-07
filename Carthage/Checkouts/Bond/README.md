@@ -9,8 +9,6 @@ Bond is a Swift binding framework that takes binding concepts to a whole new lev
 
 Bond is built on top of ReactiveKit and bridges the gap between the reactive and imperative paradigms. You can use it as a standalone framework to simplify your state changes with bindings and reactive data sources, but you can also use it with ReactiveKit to complement your reactive data flows with bindings and reactive delegates and data sources.
 
-**Note: This document describes Bond v6. For changes check out the [migration section](#migration)!**
-
 
 ## What can it do?
 
@@ -101,7 +99,7 @@ NotificationCenter.default.reactive.notification("MyNotification")
   .observeNext { notification in
     print("Got \(notification)")
   }
-  .dispose(in: reactive.bag)
+  .dispose(in: bag)
 ```
 
 Let me give you one last example. Say you have an array of repositories you would like to display in a collection view. For each repository you have a name and its owner's profile photo. Of course, photo is not immediately available as it has to be downloaded, but once you get it, you want it to appear in collection view's cell. Additionally, when user does 'pull down to refresh' and your array gets new repositories, you want those in collection view too.
@@ -168,7 +166,7 @@ name.bind(to: nameLabel)
 
 ## Bindings
 
-Binding is a connection between a Signal/Observable that produces events and a Bond that observers events and performs certain actions (e.g. updates UI).
+Binding is a connection between a signal or observable that produces events and a bond that observers events and performs certain actions (e.g. updates UI).
 
 The producing side of bindings are signals that are defined in ReactiveKit framework on top of which Bond is built. To learn more about signals, consult [ReactiveKit documentation](https://github.com/ReactiveKit/ReactiveKit).
 
@@ -176,11 +174,11 @@ The consuming side of bindings is represented by the `Bond` type. It's a simple 
 
 ```swift
 public struct Bond<Element>: BindableProtocol {
-  public init<Target: Deallocatable>(target: Target, setter: @escaping (Target, Element) -> Void)
+  public init<Target: Deallocatable>(target: Target, context: ExecutionContext, setter: @escaping (Target, Element) -> Void)
 }
 ```
 
-The only requirement is that the target must be "deallocatable", in other words that it provides a Signal of its own deallocation.
+The only requirement is that the target must be "deallocatable", in other words that it provides a signal of its own deallocation.
 
 ```swift
 public protocol Deallocatable: class {
@@ -234,7 +232,7 @@ and we would like to present a profile screen when a user is sent on the signal.
 presentUserProfile.observeOn(.main).observeNext { [weak self] user in
   let profileViewController = ProfileViewController(user: user)
   self?.present(profileViewController, animated: true)
-}.dispose(in: reactive.bag)
+}.dispose(in: bag)
 ```
 
 But that's ugly! We have to dispatch everything to the main queue, be cautious not to create a retain cycle and ensure that the disposable we get from the observation is handled.
@@ -271,7 +269,7 @@ You can then convert methods of that protocol into signals:
 ```swift
 extension UITableView {
   var selectedRow: Signal<Int, NoError> {
-    return reactive.delegate.signal(for: #selector(UITableViewDelegate.tableView(_:didSelectRowAtIndexPath:))) { (subject: PublishSubject<Int, NoError>, _: UITableView, indexPath: NSIndexPath) in 
+    return reactive.delegate.signal(for: #selector(UITableViewDelegate.tableView(_:didSelectRowAtIndexPath:))) { (subject: PublishSubject<Int, NoError>, _: UITableView, indexPath: NSIndexPath) in
       subject.next(indexPath.row)
     }
   }
@@ -285,7 +283,7 @@ Now you can do:
 ```swift
 tableView.selectedRow.observeNext { row in
   print("Tapped row at index \(row).")
-}.dispose(in: reactive.bag)
+}.dispose(in: bag)
 ```
 
 **Note:** Protocol proxy takes up delegate slot of the object so if you also need to implement delegate methods manually, don't set `tableView.delegate = x`, rather set `tableView.reactive.delegate.forwardTo = x`.
@@ -413,8 +411,8 @@ gives us fine-grained notification of mapped array changes.
 Mapping and filtering arrays operates on an array signal. To get the result back as an observable array, just bind it to an instance of ObservableArray.
 
 ```swift
-let nameLengths = ObservableArray<Int>()
-names.map { $0.characters.count }.bind(to: nameLengths) 
+let nameLengths = MutableObservableArray<Int>()
+names.map { $0.characters.count }.bind(to: nameLengths)
 ```
 
 Such features enable us to build powerful UI bindings. Observable array can be bound to `UITableView` or `UICollectionView`. Just provide a closure that creates cells to the `bind(to:)` method.
@@ -547,14 +545,14 @@ There are many other methods. Just look at the code reference or source.
 ### Carthage
 
 1. Add the following to your *Cartfile*:
-  <br> `github "ReactiveKit/Bond" ~> 6.0`
+  <br> `github "ReactiveKit/Bond"`
 2. Run `carthage update`
 3. Add the framework as described in [Carthage Readme](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application)
 
 ### CocoaPods
 
 1. Add the following to your *Podfile*:
-  <br> `pod 'Bond', '~> 6.0-beta'`
+  <br> `pod 'Bond'`
 2. Run `pod install`.
 
 ## <a name="migration"></a>Migration
